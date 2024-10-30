@@ -1,0 +1,25 @@
+name: event_manager # Tên dự án
+description: "A new Flutter project." # Mô tả dự án  
+publish_to: 'none' # Không công bố gói này lên pub.dev
+version: 0.1.0 # Phiên bản hiện tại của dự án
+
+environment:
+  sdk: ^3.5.3 # Phiên bản Dart SDK yêu cầu
+
+dependencies: # Danh sách các gói phụ thuộc
+  flutter:  # Gói chính của Flutter
+    sdk: flutter
+  flutter_localizations:  #Gói hỗ trợ đa ngôn ngữ
+    sdk: flutter
+  intl: any # Thư viện hỗ trợ định dạng
+  localstore: ^1.4.0  # Gói lưu trữ dữ liệu cục bộ
+  syncfusion_flutter_calendar: ^27.1.56 # Gói cung cấp widget lịch
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true  # Sử dụng giao diện Material Design
+  generate: true # Sử dụng để mỗi lần ta lưu tệp hoặc sử dụng lệnh flutter pub get thì các cấu hình và các biến sẽ được cập nhật

@@ -1,0 +1,3 @@
+arb-dir: lib/l10n # Thư mục chứa fille .arb
+template-arb-file: app_en.arb # Chứa các chuỗi văn bản gốc (tiếng anh)
+output-localization-file: app_localizations.dart # Xác định tên file sẽ được tạo ra chứa lớp AppLocalizations
