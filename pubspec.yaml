@@ -7,6 +7,7 @@ environment:
   sdk: ^3.5.3 # Phiên bản Dart SDK yêu cầu
 
 dependencies: # Danh sách các gói phụ thuộc
+  firebase_core: ^3.8.0
   flutter:  # Gói chính của Flutter
     sdk: flutter
   flutter_localizations:  #Gói hỗ trợ đa ngôn ngữ

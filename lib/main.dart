@@ -2,9 +2,12 @@ import 'package:event_manager/event/event_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
-  runApp(const MainApp()); // Hàm main khởi động ứng dụng với widget MainApp
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); // Đảm bảo các binding đã sẵn sàng
+  await Firebase.initializeApp(); // Khởi tạo Firebase
+  runApp(const MainApp()); // Chạy ứng dụng với widget MainApp
 }
 
 class MainApp extends StatelessWidget {
